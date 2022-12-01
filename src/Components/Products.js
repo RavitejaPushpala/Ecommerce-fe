@@ -6,7 +6,7 @@ import useFetchUserData from '../Hooks/useFetchUserData';
 import { useParams } from 'react-router-dom';
 function Products() {
   let id=useParams().id;
-  const {isLoading,data}=useFetchUserData('product-details',`https://obscure-refuge-62167.herokuapp.com/products/${id}`);
+  const {isLoading,data}=useFetchUserData(['product-details',id],`https://obscure-refuge-62167.herokuapp.com/products/${id}`);
   
   if(isLoading){
     return <h2>Loading ...</h2>
