@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className='navbar'>
         <NavLink className='navlink1' to='/'>Home</NavLink>
-        <NavLink to='/Products/:id'>Products</NavLink>
+        <NavLink to='/products/1'>Products</NavLink>
     </nav>
   )
 }

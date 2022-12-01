@@ -29,6 +29,7 @@
     margin-bottom: 40px;
     border: 1px solid rgb(224, 219, 219);
     border-radius: 5px;
+    margin-right: 30px;
  }
  .Individual_product:hover{
     box-shadow: 0px 20px rgb(240, 241, 241);
@@ -47,7 +48,7 @@
  .AllProducts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
  }
  .ProductPageDescription{
     margin-top: 20px;
@@ -60,8 +61,9 @@
  .Products .BottleImg{
     width: 50%;
  }
- .AddToCart div{
+ .AddToCart div,.quantity{
     margin: 10px;
+    margin-bottom: 20px;
  }
  .ProductPageDescription .Description h3{
     font-size: 25px;
