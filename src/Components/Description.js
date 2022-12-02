@@ -1,12 +1,11 @@
 import React from 'react'
 import './comp.css';
-
-function Description() {
+function Description(props) {
   return (
     <div className='Description'>
-        <h3>Bottle</h3>
-        <div>Bottle Description</div>
-        <div>Price : <strong>$ 310</strong></div>
+        <h3>{props.productData.name}</h3>
+        <div>{props.productData.description}</div>
+        <div>Price : <strong>$ {props.productData.price}</strong></div>
 
     </div>
   )

@@ -3,10 +3,12 @@ import Description from './Description'
 import AddToCart from './AddToCart'
 import './comp.css';
 
-function ProductPageDescription() {
+function ProductPageDescription(props) {
   return (
     <div className='ProductPageDescription'>
-        <Description/>
+        <Description productData={props.productData}/>
+        <p className='quantity'>Quantity : <strong>{props.productData.quantity}</strong></p>
+
         <AddToCart/>
     </div>
   )
