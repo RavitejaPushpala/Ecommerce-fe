@@ -3,7 +3,7 @@ import BottleImg from "./bottleImg";
 import './comp.css';
 import Description from "./Description";
 import {Link} from 'react-router-dom'
-function Individual_product(props) {
+function IndividualProduct(props) {
   return (
     <Link to={'/products/'+props.productData.id} className='Individual_product'>
          <BottleImg image={props.productData.image}/>
@@ -13,4 +13,4 @@ function Individual_product(props) {
   )
 }
 
-export default Individual_product
+export default IndividualProduct

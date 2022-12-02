@@ -3,12 +3,16 @@ import Description from './Description'
 import AddToCart from './AddToCart'
 import './comp.css';
 
-function getQuantStatus(quantity){
-  if(quantity===0) return 'unavailable';
-  else if(quantity>10) return 'available';
-  else if(quantity<=10) return 'selling fast';
+const getQuantStatus=(quantity)=>{
+  console.log(quantity);
+  switch(true){
+    case quantity===0: return 'unavailable';
+    case quantity>10: return 'available';
+    case quantity<=10: return 'selling fast';
+  }
+  
 }
-function ProductPageDescription(props) {
+const ProductPageDescription=(props)=> {
   let quantity=props.productData.quantity;
   let quantityStatus=getQuantStatus(quantity);
   function OnClickVarient(variantColor){
