@@ -5,8 +5,8 @@ import AllProducts from "./AllProducts";
 function Home() {
   return (
     <>
-    <Header></Header>
-    <AllProducts/>
+      <Header></Header>
+      <AllProducts />
     </>
   )
 }

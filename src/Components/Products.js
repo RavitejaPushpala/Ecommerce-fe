@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react'
 function Products() {
   let id = useParams().id;
-  const { isLoading, data, isFetched ,isError, error } = useProductData(id);
+  const { isLoading, data, isFetched, isError, error } = useProductData(id);
   const [image, setImage] = useState(null);
   if (isLoading) {
     return <h2>Loading ...</h2>
@@ -18,7 +18,7 @@ function Products() {
   if (isFetched && image === null) {
     setImage(data?.data.image)
   }
-  const imageVarient=(variantColor)=> {
+  const imageVarient = (variantColor) => {
     let variImage;
     for (let variant of data.data.variants) {
       if (variant.color === variantColor) {
