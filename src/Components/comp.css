@@ -64,10 +64,56 @@
  .Products .BottleImg{
     width: 50%;
  }
- .AddToCart div,.quantity,.variants{
+ .AddToCart div,.quantity{
     margin: 10px;
     margin-bottom: 20px;
  }
  .ProductPageDescription .Description h3{
     font-size: 25px;
+ }
+ .cart{
+   display: flex;
+   justify-content: flex-end;
+ }
+ .CartList{
+   border: 1px solid black;
+   background-color: rgb(219, 216, 216);
+   width: 25%;
+   position: fixed;
+   margin-left: 59%;
+   /* height: 300px; */
+   /* overflow-y: scroll; */
+   padding: 20px;
+ }
+ .CartImage{
+   width: 50%;
+   height: 50%;
+ }
+ .CartDescription{
+   width: 50%;
+   font-size: 10px;
+   height: 130px;
+   overflow: hidden;
+ }
+ .CartDescription div{
+   margin-left: 10px;
+
+ }
+ .CartItem{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   margin-top: 10px;
+ }
+
+ .variant{
+   width: 30px;
+   height: 30px;
+   margin-left: 10px;
+ }.variants{
+   display: flex;
+
+ }
+ .AddToCart{
+   margin: 10px;
  }

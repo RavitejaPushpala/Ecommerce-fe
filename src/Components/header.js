@@ -6,8 +6,8 @@ import './comp.css';
 function Header() {
   return (
     <div className='header'>
-        <Products_h2></Products_h2>
-        <CreateProduct></CreateProduct>
+      <Products_h2></Products_h2>
+      <CreateProduct></CreateProduct>
     </div>
   )
 }
